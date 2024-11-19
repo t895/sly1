@@ -1215,6 +1215,13 @@ LimitVectorLength = 0x1EE2B0; // type:func
 ////////////////////////////////////////////////////////////////
 // P2/wipe.c
 ////////////////////////////////////////////////////////////////
+InitWipe = 0x1EFCE8; // type:func
+UpdateWipe = 0x1EFD10; // type:func
+DrawWipe = 0x1EFEE0; // type:func
+ActivateWipe = 0x1EFFA0; // type:func
+SetWipeButtonTrans = 0x1F00C0; // type:func
+FCatchWipeButtonTrans = 0x1F00F0; // type:func
+SetWipeWipes = 0x1F0220; // type:func
 WipeToWorldWarp = 0x1F0428; // type:func
 
 g_pwipe = 0x275f80;

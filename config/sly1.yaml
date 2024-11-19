@@ -293,8 +293,8 @@ segments:
     - [0xef900, asm, P2/vis]
     - [0xefc60, asm, P2/water]
     - [0xf0838, asm, P2/waypoint]
-    - [0xf0ce8, asm, P2/wipe]
-    - [0xf1758, asm, P2/wm] # not confident
+    - [0xf0ce8, c, P2/wipe]
+    - [0xf1468, asm, P2/wm] # not confident
 
     - [0xf49f8, c, P2/xform1]
     - [0xf4c38, asm, P2/xform_PwarpFromOid]

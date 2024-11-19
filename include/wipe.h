@@ -5,6 +5,7 @@
 #define WIPE_H
 
 #include "common.h"
+#include <joy.h>
 #include <transition.h>
 #include <oid.h>
 
@@ -48,6 +49,20 @@ struct WIPE
 
 extern WIPE *g_pwipe;
 extern WIPE g_wipe;
+
+void InitWipe(WIPE *pwipe);
+
+void UpdateWipe(WIPE *pwipe, JOY *pjoy);
+
+void DrawWipe(WIPE *pwipe);
+
+void ActivateWipe(WIPE *pwipe, TRANS *ptrans, WIPEK wipek);
+
+void SetWipeButtonTrans(WIPE *pwipe, TRANS *ptrans, WIPEK wipek);
+
+int FCatchWipeButtonTrans(WIPE *pwipe, JOY *pjoy, WIPES wipesNew);
+
+void SetWipeWipes(WIPE *pwipe, WIPES wipes);
 
 extern "C" {
     void WipeToWorldWarp(const void *pchzWorld, OID oidWarp, WIPEK wipek);
